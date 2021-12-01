@@ -6,10 +6,11 @@ import { AdminComponent } from './admin/admin.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './shared/guards/auth.guard';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'courses', component: CoursesComponent },
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard], },
+  { path: 'courses', component: CoursesComponent , canActivate: [AuthGuard],},
   { path: 'login', component: LoginComponent },
   {
     path: 'admin',
