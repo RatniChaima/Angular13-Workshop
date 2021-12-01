@@ -1,4 +1,4 @@
-# Angula13-Workshop
+# Angular13-Workshop
 
 This is the sample project for the Angular 13 Fundamentals Workshop.
 
